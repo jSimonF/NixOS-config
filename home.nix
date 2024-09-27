@@ -29,7 +29,6 @@
 
   stylix = {
     enable = true;
-    targets.neovim.enable = false;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     image = ./wallpapers/gengar.jpg;
     fonts = {
