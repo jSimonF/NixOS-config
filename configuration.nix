@@ -147,6 +147,7 @@
     wget
     unzip
     git
+    gh
     fastfetch
     brightnessctl
     playerctl
