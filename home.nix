@@ -8,6 +8,7 @@
     ./user/app/emacs/emacs.nix
     ./user/lang/R/R.nix
     ./user/lang/julia/julia.nix
+    ./user/lang/python/python.nix
   ];
 
   home.username = "simon";
