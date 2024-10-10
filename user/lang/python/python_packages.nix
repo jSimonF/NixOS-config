@@ -1,7 +1,7 @@
 { config, pkgs, lib, ...}:
 
 {
-  home.packages = with pkgs.python3Packages; [
+  home.packages = with pkgs.python312Packages; [
     numpy
     scipy
   ];

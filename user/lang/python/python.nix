@@ -3,6 +3,6 @@
 {
   home.packages = with pkgs; [
       # Python setup
-      python3
+      python312
   ];
 }
