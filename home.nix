@@ -7,6 +7,7 @@
     ./user/app/nvim/neovim.nix
     ./user/app/emacs/emacs.nix
     ./user/lang/R/R.nix
+    ./user/lang/julia/julia.nix
   ];
 
   home.username = "simon";
