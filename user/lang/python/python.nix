@@ -5,7 +5,7 @@
       # Python setup
       python312
       (pkgs.python312.withPackages (ppkgs: [
-      numpy
+      ppkgs.numpy
       ]))
   ];
 }
