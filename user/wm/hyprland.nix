@@ -5,6 +5,7 @@
     hypridle
     hyprlock
     hyprpaper
+    wl-clipboard
   ];
 
  home.file.".config/hypr/hypridle.conf".text = ''
