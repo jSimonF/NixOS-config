@@ -9,7 +9,6 @@
     ./user/lang/R/R.nix
     ./user/lang/julia/julia.nix
     ./user/lang/python/python.nix
-    ./user/lang/python/python_packages.nix
   ];
 
   home.username = "simon";
