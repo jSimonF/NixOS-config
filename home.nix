@@ -27,7 +27,10 @@
     discord
     cura
     gcc
+    blueman
   ];
+
+  services.blueman-applet.enable = true;
 
   stylix = {
     enable = true;
