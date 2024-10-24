@@ -151,6 +151,7 @@
     fastfetch
     brightnessctl
     playerctl
+    pavucontrol
     firefox
     spotify
     sqlitebrowser
