@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # Update flake
-nix flake update .
-nixos-rebuild switch --flake .
+sudo nix flake update .
+sudo nixos-rebuild switch --flake .
 
 # Push updated flake
 git add *
