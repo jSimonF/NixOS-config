@@ -5,6 +5,7 @@
       # Python setup
       (pkgs.python312.withPackages (ppkgs: [
       ppkgs.numpy
+      ppkgs.matplotlib
       ]))
   ];
 }
