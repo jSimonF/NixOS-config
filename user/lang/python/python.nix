@@ -7,5 +7,15 @@
       ppkgs.numpy
       ppkgs.matplotlib
       ]))
+
+      # matplotlib dependencies
+      glib
+      zlib
+      libGL
+      fontconfig
+      xorg.libX11
+      libxkbcommon
+      freetype
+      dbus
   ];
 }
