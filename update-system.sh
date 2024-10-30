@@ -3,6 +3,7 @@
 # Update flake
 sudo nix flake update .
 sudo nixos-rebuild switch --flake .
+home-manager switch --flake .
 
 # Push updated flake
 git add *
