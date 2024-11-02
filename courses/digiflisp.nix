@@ -1,4 +1,4 @@
-{ pkgs, config, lib, ... }:
+{ pkgs ? import <nixpkgs> {} }:
 
 pkgs.stdenv.mkDerivation {
   pname = "digiflisp";
