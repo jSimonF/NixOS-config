@@ -8,7 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./courses/digiflisp.nix
+      ./courses/grudat.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
