@@ -5,8 +5,8 @@ let
 in
 {
   environment.systemPackages = with pkgs; [
-    digiflisp.digiflisp  # Include digiflisp
-    digiflisp.qaflisp    # Include qaflisp
+    digiflisp
+    qaflisp
   ];
 }
 
