@@ -10,7 +10,7 @@ in
   ];
 
   # Adding .desktop entries for Rofi
-  environment.etc."xdg/applications/digiflisp.desktop" = ''
+  environment.xdg.applications.digiflisp = ''
     [Desktop Entry]
     Version=1.0
     Name=Digiflisp
@@ -21,7 +21,7 @@ in
     Categories=Development;IDE;
   '';
 
-  environment.etc."xdg/applications/qaflisp.desktop" = ''
+  environment.etc.xdg.applications.qaflisp = ''
     [Desktop Entry]
     Version=1.0
     Name=Qaflisp
