@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 let
-  digiflisp = pkgs.callPackage /path/to/your/digiflisp.nix {};
+  digiflisp = pkgs.callPackage ./digiflisp.nix {};
 in
 {
   environment.systemPackages = with pkgs; [
