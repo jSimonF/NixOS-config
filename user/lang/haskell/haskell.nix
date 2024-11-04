@@ -5,5 +5,6 @@
       # Haskell
       haskellPackages.haskell-language-server
       haskellPackages.stack
+      ghc
   ];
 }
