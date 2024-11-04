@@ -9,6 +9,7 @@
     ./user/lang/R/R.nix
     ./user/lang/julia/julia.nix
     ./user/lang/python/python.nix
+    ./user/lang/haskell/haskell.nix
   ];
 
   home.username = "simon";
