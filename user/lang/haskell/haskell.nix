@@ -5,6 +5,6 @@
       # Haskell
       haskellPackages.haskell-language-server
       haskellPackages.stack
-      haskellPackages.ghcup
+      haskellPackages.ghc_9_10_1
   ];
 }
