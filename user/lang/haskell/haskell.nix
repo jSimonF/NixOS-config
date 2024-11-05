@@ -5,5 +5,7 @@
       # Haskell
       haskellPackages.haskell-language-server
       haskellPackages.stack
+      haskellPackages.cabal-install
+      ghc
   ];
 }
