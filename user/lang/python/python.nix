@@ -23,5 +23,6 @@
       xorg.libXfixes
       xorg.libXft
       fontconfig
+      xorg.libXinerama
   ];
 }
