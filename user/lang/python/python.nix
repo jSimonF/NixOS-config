@@ -19,5 +19,6 @@
       dbus
       libGLU
       xorg.libXrender
+      xorg.libXcursor
   ];
 }
