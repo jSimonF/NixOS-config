@@ -21,5 +21,6 @@
       xorg.libXrender
       xorg.libXcursor
       xorg.libXfixes
+      xorg.libXft
   ];
 }
