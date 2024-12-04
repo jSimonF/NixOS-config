@@ -22,5 +22,6 @@
       xorg.libXcursor
       xorg.libXfixes
       xorg.libXft
+      fontconfig
   ];
 }
