@@ -20,5 +20,6 @@
       libGLU
       xorg.libXrender
       xorg.libXcursor
+      xorg.libXfixes
   ];
 }
