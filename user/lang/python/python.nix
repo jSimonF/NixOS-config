@@ -17,5 +17,6 @@
       libxkbcommon
       freetype
       dbus
+      libGLU
   ];
 }
