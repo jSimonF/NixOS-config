@@ -18,6 +18,6 @@
       freetype
       dbus
       libGLU
-      libXrender
+      xorg.libXrender
   ];
 }
