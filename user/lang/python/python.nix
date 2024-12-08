@@ -6,6 +6,7 @@
       (pkgs.python312.withPackages (ppkgs: [
       ppkgs.numpy
       ppkgs.matplotlib
+      ppkgs.gmsh
       ]))
 
       # matplotlib dependencies
