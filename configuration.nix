@@ -83,6 +83,16 @@
 
   services.blueman.enable = true;
 
+  {
+  services.bluetooth = {
+    enable = true;
+    extraConfig = ''
+      AutoEnable=true
+    '';
+  };
+}
+
+
   # Enable sound.
   sound.enable = true;
   security.rtkit.enable = true;  
