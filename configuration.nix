@@ -154,6 +154,7 @@
     playerctl
     pavucontrol
     firefox
+    webcord
     spotify
     sqlitebrowser
     prusa-slicer
