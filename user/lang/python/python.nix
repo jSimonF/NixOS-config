@@ -7,6 +7,7 @@
       ppkgs.numpy
       ppkgs.matplotlib
       ppkgs.gmsh
+      ppkgs.scipy
       ]))
 
       # matplotlib dependencies
