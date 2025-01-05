@@ -29,6 +29,7 @@
     cura
     gcc
     blueman
+    kanshi
   ];
 
   services.blueman-applet.enable = true;
@@ -115,30 +116,32 @@
   services.kanshi = {
     enable = true;
     systemdTarget = "hyprland-session.target";
+    settings = [
 
-    profiles = {
-      undocked = {
-        outputs = [
+      {
+        profile.name = "undocked";
+        profile.outputs = [
           {
             criteria = "eDP-1";
             status = "enable";
           }
         ];
-      };
+      }
 
-      home_office = {
-        outputs = [
-          {
-            criteria = "LG Electronics LG HDR WQHD 0x00061FA5";
-            mode = "3840x2160@60Hz";
-          }
+      {
+        profile.name = "docked";
+        profile.outputs = [
           {
             criteria = "eDP-1";
             status = "disable";
           }
+          {
+            criteria = "LG Electronics LG HDR WQHD 0x00061FA5";
+            status = "enable";
+            mode = "3840x2160@60Hz";
+          }
         ];
-      };
-    };
+      } 
+    ];
   };
-
 }
