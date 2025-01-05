@@ -111,4 +111,34 @@
   };
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+  
+  services.kanshi = {
+    enable = true;
+    systemdTarget = "hyprland-session.target";
+
+    profiles = {
+      undocked = {
+        outputs = [
+          {
+            criteria = "eDP-1";
+            status = "enable";
+          }
+        ];
+      };
+
+      home_office = {
+        outputs = [
+          {
+            criteria = "LG Electronics LG HDR WQHD 0x00061FA5";
+            mode = "3840x2160@60Hz";
+          }
+          {
+            criteria = "eDP-1";
+            status = "disable";
+          }
+        ];
+      };
+    };
+  };
+
 }
