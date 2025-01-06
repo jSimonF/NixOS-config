@@ -138,7 +138,7 @@
           {
             criteria = "LG Electronics LG HDR WQHD 0x00061FA5";
             status = "enable";
-            mode = "3840x2160@60Hz";
+            mode = "3440x1440@59.97Hz";
           }
         ];
       } 
