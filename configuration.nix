@@ -71,10 +71,8 @@
     bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
   };
 
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
   };
 
   programs.steam.enable = true;
@@ -83,8 +81,6 @@
 
   services.blueman.enable = true;
 
-  # Enable sound.
-  sound.enable = true;
   security.rtkit.enable = true;  
   services.pipewire = {
     enable = true;
