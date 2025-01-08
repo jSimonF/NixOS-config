@@ -26,7 +26,6 @@
   home.packages = with pkgs; [
     nixfmt-classic
     discord
-    cura
     gcc
     blueman
     kanshi
