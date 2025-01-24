@@ -116,7 +116,6 @@
   stylix = {
     autoEnable = false;
 
-    targets.firefox.enable = true;
     targets.gtk.enable = true;
     targets.hyprpaper.enable = true;
     targets.hyprlock.enable = true;
