@@ -43,6 +43,7 @@
     
     targets.firefox.enable = true;
     targets.gtk.enable = true;
+    targets.hyprland.enable = true;
     targets.hyprpaper.enable = true;
     targets.hyprlock.enable = true;
     targets.kitty.enable = true;
