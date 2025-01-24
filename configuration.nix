@@ -146,13 +146,11 @@
     wget
     unzip
     git
-    gh
     fastfetch
     brightnessctl
     playerctl
     pavucontrol
     firefox
-    webcord
     spotify
     sqlitebrowser
     prusa-slicer
