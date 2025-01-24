@@ -79,6 +79,8 @@
     enable = true;
     iconTheme.package = pkgs.papirus-icon-theme;
     iconTheme.name = "Papirus-Dark";
+    cursorTheme.package = pkgs.quintom-cursor-theme;
+    cursorTheme.name = "Quintom_Snow";
   };
 
   programs.kitty = {
