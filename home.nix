@@ -39,7 +39,14 @@
   };
 
   stylix = {
-    enable = true;
+    autoEnable = false;
+
+    targets.firefox.enable = true;
+    targets.gtk.enable = true;
+    targets.hyprpaper.enable = true;
+    targets.hyprlock.enable = true;
+    targets.kitty.enable = true;
+
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     image = ./wallpapers/gengar.jpg;
     fonts = {
