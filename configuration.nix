@@ -112,36 +112,6 @@
   ];
 
   fonts.fontDir.enable = true;
-  
-  stylix = {
-    autoEnable = false;
-
-    targets.gtk.enable = true;
-    targets.hyprpaper.enable = true;
-    targets.hyprlock.enable = true;
-    targets.kitty.enable = true;
-
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
-    image = ./wallpapers/gengar.jpg;
-    fonts = {
-      monospace = {
-        package = pkgs.nerdfonts.override {fonts = ["JetBrainsMono"];};
-        name = "JetBrainsMono Nerd Font Mono";
-      };
-      sansSerif = {
-        package = pkgs.dejavu_fonts;
-        name = "DejaVu Sans";
-      };
-      serif = {
-        package = pkgs.dejavu_fonts;
-        name = "DejaVu Serif";
-      };
-      emoji = {
-        name = "Noto Color Emoji";
-        package = pkgs.noto-fonts-emoji-blob-bin;
-      };
-    };
-  };
 
   nixpkgs.config.allowUnfree = true;
 
