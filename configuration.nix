@@ -36,7 +36,7 @@
     isNormalUser = true;
     home = "/home/simon";
     description = "Simon Franklin";
-    extraGroups = [ "wheel" "networkmanager" "input" "dialout" "docker" ];
+    extraGroups = [ "wheel" "networkmanager" "input" "dialout" ];
   };
 
 
@@ -103,8 +103,6 @@
       STOP_CHARGE_THRESH_BAT1 = 85;
     };
   };
-  
-  virtualisation.docker.enable = true;
 
   programs.thunar.enable = true;
 
@@ -131,6 +129,7 @@
     spotify
     sqlitebrowser
     prusa-slicer
+    remmina
 
     #Hyprland
     waybar

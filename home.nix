@@ -33,11 +33,6 @@
 
   services.blueman-applet.enable = true;
 
-  programs.vscode = {
-    enable = true;
-    package = pkgs.vscode.fhs;
-  };
-
   stylix = {
     autoEnable = false;
     
