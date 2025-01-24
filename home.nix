@@ -137,6 +137,8 @@
           {
             criteria = "eDP-1";
             status = "enable";
+            mode = "1920x1080@60.01Hz";
+            scale = 1.0;
           }
         ];
       }
@@ -147,6 +149,7 @@
           {
             criteria = "eDP-1";
             status = "disable";
+            mode = "1920x1080@60.01Hz";
           }
           {
             criteria = "LG Electronics LG HDR WQHD 0x00061FA5";
