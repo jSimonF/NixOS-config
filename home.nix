@@ -69,14 +69,14 @@
       desktop = 12;
     };
     };
+    cursor.package = pkgs.quintom-cursor-theme;
+    cursor.name = "Quintom_Snow";
   };
 
   gtk = {
     enable = true;
     iconTheme.package = pkgs.papirus-icon-theme;
     iconTheme.name = "Papirus-Dark";
-    cursorTheme.package = pkgs.quintom-cursor-theme;
-    cursorTheme.name = "Quintom_Snow";
   };
 
   programs.kitty = {
