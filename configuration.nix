@@ -130,6 +130,7 @@
     prusa-slicer
     remmina
     zoom-us
+    catppucin-cursors
 
     #Hyprland
     waybar
@@ -139,17 +140,16 @@
     libnotify
   ];
 
+  environment.variables = {
+    XCURSOR_THEME = "Catppuccin-Mocha-Light-Cursors";
+    XCURSOR_SIZE = "24";
+  };
+
   stylix = {
-    homeManagerIntegration.followSystem = true;
     autoEnable = false;
     
-    targets.firefox.enable = true;
     targets.gtk.enable = true;
-    targets.hyprland.enable = true;
-    targets.hyprpaper.enable = true;
-    targets.hyprlock.enable = true;
-    targets.kitty.enable = true;
-    targets.konsole.enable = true;
+    targets.console.enable = true;
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     image = ./wallpapers/gengar.jpg;
