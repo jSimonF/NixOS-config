@@ -8,7 +8,6 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./courses/grudat.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -19,7 +18,7 @@
   users.defaultUserShell = pkgs.zsh;
   programs.zsh.enable = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "franklin"; # Define your hostname.
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
   # Time zone
@@ -130,6 +129,7 @@
     sqlitebrowser
     prusa-slicer
     remmina
+    zoom-us
 
     #Hyprland
     waybar
@@ -138,6 +138,49 @@
     rofi-wayland
     libnotify
   ];
+
+  stylix = {
+    homeManagerIntegration.followSystem
+    autoEnable = false;
+    
+    targets.firefox.enable = true;
+    targets.gtk.enable = true;
+    targets.hyprland.enable = true;
+    targets.hyprpaper.enable = true;
+    targets.hyprlock.enable = true;
+    targets.kitty.enable = true;
+    targets.konsole.enable = true;
+
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+    image = ./wallpapers/gengar.jpg;
+    fonts = {
+      monospace = {
+        package = pkgs.nerdfonts.override {fonts = ["JetBrainsMono"];};
+        name = "JetBrainsMono Nerd Font Mono";
+      };
+      sansSerif = {
+        package = pkgs.dejavu_fonts;
+        name = "DejaVu Sans";
+      };
+      serif = {
+        package = pkgs.dejavu_fonts;
+        name = "DejaVu Serif";
+      };
+      emoji = {
+        name = "Noto Color Emoji";
+        package = pkgs.noto-fonts-emoji-blob-bin;
+      };
+      sizes = {
+      terminal = 15;
+      applications = 12;
+      popups = 12;
+      desktop = 12;
+    };
+    };
+    cursor.package = pkgs.quintom-cursor-theme;
+    cursor.name = "Quintom_Snow";
+  };
+
 
   # Do NOT change this value unless you have manually inspected all the changes it would make to your configuration,
   # and migrated your data accordingly.
