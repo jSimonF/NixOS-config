@@ -140,7 +140,7 @@
   ];
 
   stylix = {
-    homeManagerIntegration.followSystem;
+    homeManagerIntegration.followSystem = true;
     autoEnable = false;
     
     targets.firefox.enable = true;
