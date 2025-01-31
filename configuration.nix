@@ -130,7 +130,7 @@
     prusa-slicer
     remmina
     zoom-us
-    catppucin-cursors
+    catppuccin-cursors.mochaLight
 
     #Hyprland
     waybar
@@ -141,14 +141,12 @@
   ];
 
   environment.variables = {
-    XCURSOR_THEME = "Catppuccin-Mocha-Light-Cursors";
-    XCURSOR_SIZE = "24";
+    XCURSOR_THEME = "catppuccin-mocha-light-cursors";
+    XCURSOR_SIZE = "32";
   };
 
   stylix = {
     autoEnable = false;
-    
-    targets.gtk.enable = true;
     targets.console.enable = true;
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
@@ -177,8 +175,6 @@
       desktop = 12;
     };
     };
-    cursor.package = pkgs.quintom-cursor-theme;
-    cursor.name = "Quintom_Snow";
   };
 
 

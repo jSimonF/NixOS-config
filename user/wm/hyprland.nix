@@ -5,6 +5,7 @@
     hypridle
     hyprlock
     hyprpaper
+    hyprcursor
     wl-clipboard
   ];
 

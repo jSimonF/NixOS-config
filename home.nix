@@ -23,8 +23,6 @@
 
   nixpkgs.config.allowUnfree = true;  
 
-  home.file.".icons/default".source = "${pkgs.vanilla-dmz}/share/icons/Vanilla-DMZ";
-
   home.packages = with pkgs; [
     nixfmt-classic
     discord
@@ -40,10 +38,8 @@
     
     targets.firefox.enable = true;
     targets.gtk.enable = true;
-    targets.hyprland.enable = true;
-    targets.hyprpaper.enable = true;
-    targets.hyprlock.enable = true;
     targets.kitty.enable = true;
+    targets.emacs.enable = true;
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     image = ./wallpapers/gengar.jpg;
@@ -71,16 +67,14 @@
       desktop = 12;
     };
     };
-    cursor.package = pkgs.quintom-cursor-theme;
-    cursor.name = "Quintom_Snow";
   };
 
   gtk = {
     enable = true;
     iconTheme.package = pkgs.papirus-icon-theme;
     iconTheme.name = "Papirus-Dark";
-    cursorTheme.package = pkgs.quintom-cursor-theme;
-    cursorTheme.name = "Quintom_Snow";
+    cursorTheme.package = pkgs.catppuccin-cursors.mochaLight;
+    cursorTheme.name = "catppuccin-mocha-light-cursors";
   };
 
   programs.kitty = {
