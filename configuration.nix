@@ -42,7 +42,10 @@
   services.getty.autologinUser = "simon";
   
   xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
+  xdg.portal.config.hyprland = {
+    "org.freedesktop.impl.portal.ScreenCast" = "hyprland";
+  };
 
   programs.hyprland = {
     enable = true;
@@ -91,6 +94,9 @@
     jack.enable = true;
   };
 
+  # USB mount
+  services.udisks2.enable = true;
+
   # Battery health
   services.tlp = {
     enable = true;
@@ -125,12 +131,16 @@
     playerctl
     pavucontrol
     firefox
+    thunderbird
     spotify
     sqlitebrowser
     prusa-slicer
     remmina
     zoom-us
     catppuccin-cursors.mochaLight
+    bitwarden
+    libreoffice
+    udiskie
 
     #Hyprland
     waybar
