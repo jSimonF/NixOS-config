@@ -29,6 +29,11 @@
     gcc
     blueman
     kanshi
+    gimp
+    komikku
+    zathura
+    obsidian
+    nwg-dock-hyprland
   ];
 
   services.blueman-applet.enable = true;
@@ -151,7 +156,23 @@
             mode = "3440x1440@59.97Hz";
           }
         ];
-      } 
+      }
+      {
+        profile.name = "other";
+        profile.outputs = [
+          {
+            criteria = "eDP-1";
+            status = "enable";
+            mode = "1920x1080@60.01Hz";
+            scale = 1.0;
+          }
+          {
+            criteria = "*";
+            status = "enable";
+            mode = "1920x1080@60.00Hz";
+          }
+        ];
+      }
     ];
   };
 }
