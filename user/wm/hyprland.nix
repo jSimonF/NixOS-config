@@ -7,6 +7,10 @@
     hyprpaper
     hyprcursor
     wl-clipboard
+
+    #Screenshot
+    grim
+    slurp
   ];
 
  home.file.".config/hypr/hypridle.conf".text = ''
